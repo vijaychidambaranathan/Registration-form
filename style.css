@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.form-container {
+    padding: 20px;
+    position: relative;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.input-field input:focus {
+    border: 1px solid #a29bfe;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #6c5ce7;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a29bfe;
+}
+
+.forgot-password, #sign-up-btn, #sign-in-btn {
+    color: #6c5ce7;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover, #sign-up-btn:hover, #sign-in-btn:hover {
+    text-decoration: underline;
+}
+
+.social-text {
+    text-align: center;
+    margin: 10px 0;
+    color: #888;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+}
+
+.form {
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
+.sign-in-form {
+    display: block;
+}
+
+.container.active .sign-in-form {
+    display: none;
+}
+
+.container.active .sign-up-form {
+    display: block;
+}

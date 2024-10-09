@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Shop Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- Sign In Form -->
+            <div class="form sign-in-form">
+                <h2>Sign In</h2>
+                <form action="signin.php" method="POST">
+                    <div class="input-field">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Email" name="signin-email" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Password" name="signin-password" required />
+                    </div>
+                    <a href="#" class="forgot-password">Recover Password</a>
+                    <button class="btn" type="submit">Sign In</button>
+                </form>
+                <p class="social-text">Or Sign In with</p>
+                <div class="social-icons">
+                    <a href="#"><img src="google.png" alt="Google"></a>
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                </div>
+                <p>Don't have an account yet? <a href="#" id="sign-up-btn">Sign Up</a></p>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="form sign-up-form">
+                <h2>Sign Up</h2>
+                <form action="signup.php" method="POST">
+                    <div class="input-field">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="First Name" name="signup-firstname" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="Last Name" name="signup-lastname" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Email" name="signup-email" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="Password" name="signup-password" required />
+                    </div>
+                    <button class="btn" type="submit">Sign Up</button>
+                </form>
+                <p class="social-text">Or Sign Up with</p>
+                <div class="social-icons">
+                    <a href="#"><img src="google.png" alt="Google"></a>
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                </div>
+                <p>Already have an account? <a href="#" id="sign-in-btn">Sign In</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
